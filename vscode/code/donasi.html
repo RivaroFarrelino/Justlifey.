@@ -9,99 +9,90 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <style>
+        .brand-name {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+        }
+        h2 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        h3 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+        }
+        p {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 300;
+        }
+      </style>
     </head>
     <body style="margin-left: 60px; margin-right: 60px;">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <div class="d-flex align-items-center">
-            <a class="navbar-brand" href="home.html">
-              <img src="./images/biru laut 2.png" alt="Logo" width="50" height="50" class="d-inline-block align-items-center">
-              Justlifey.
-            </a>
-            <form class="d-flex ms-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top" style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
+        <div class="container-fluid" style="margin-left: 50px; margin-right: 50px">
+          <a class="navbar-brand d-flex align-items-center" href="home.html">
+            <img src="./images/logo brand.png" alt="Logo" style="width:40px; margin-right: 10px; margin-left: 20px;">
+            <span class="brand-name">Justlifey.</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
+          <div class="collapse navbar-collapse" id="mynavbar" style="margin-left: 30px;">
+            <form class="d-flex ml-auto">
+              <input class="form-control form-control-sm me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary custom-search-btn" type="button">Search</button>
+            </form>
+            <!-- Dropdown -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown" style="margin-right: 50px;">
+                <a class="nav-link" href="#terkini">Terkini</a>
+              </li>
+              <li class="nav-item dropdown" style="margin-right: 35px;">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Proyek
+                  Kategori Donasi
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Bencana Alam</a></li>
+                  <li><a class="dropdown-item" href="#">Kemanusiaan</a></li>
+                  <li><a class="dropdown-item" href="#">Kesehatan</a></li>
+                  <li><a class="dropdown-item" href="#">Pendidikan</a></li>
+                  <li><a class="dropdown-item" href="#">Untuk Hewan</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Galeri
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Donasi
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Statistik
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item dropdown" style="margin-right: 100px;">
+                <a class="nav-link" href="javascript:void(0)">Galang Dana</a>
               </li>
             </ul>
-            <a class="profile" href="akun.html">
-              <img src="./images/user.png" alt="Logo" width="45" height="45" class="d-inline-block align-items-center"></a>
+            <a href="#"><img src="./images/profile.png" alt="Profile" style="width:40px; margin-right: 20px;" class="rounded-pill d-none d-sm-inline"></a>
           </div>
         </div>
       </nav>
-
-      <br>
+      <div class="container-fluid" style="margin-top:80px">
+      
       <br>
       
       <div page>
         <div class="nav-button-donasi d-flex" id="nav-button-donasi">
           <div class="btn-group">
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="btn btn-info dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Donasi
             </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Qurban</a>
+              <a class="dropdown-item" href="#">Zakat</a>
+              <a class="dropdown-item" href="#">Galang Dana</a>
             </div>
-          </div>
+          </div>        
           <div class="nav-button-selainDonasi">
-            <button type="button" class="btn btn-primary" id="nav-button-kesehatan"> <img src="./images/Navigasi Button/kesehatan.png" alt="kesehatan" sizes="50%"> Kesehatan</button>
-            <button type="button" class="btn btn-outline-success" id="nav-button-kemanusiaan"> <img src="./images/Navigasi Button/kemanusiaan.png" alt="kemanusiaan" sizes="50%"> Kemanusiaan</button>
-            <button type="button" class="btn btn-outline-warning" id="nav-button-bencanaalam"> <img src="./images/Navigasi Button/bencana alam.png" alt="bencana alam" sizes="50%"> Bencana Alam</button>
-            <button type="button" class="btn btn-outline-success" id="nav-button-zakat"> <img src="./images/Navigasi Button/zakat.png" alt="zakat" sizes="50%"> Zakat</button>
-            <button type="button" class="btn btn-outline-danger" id="nav-button-pendidikan"> <img src="./images/Navigasi Button/pendidikan.png" alt="pendidikan" sizes="50%"> Pendidikan</button>
+            <button type="button" class="btn btn-danger" id="nav-button-kesehatan"> <img src="./images/Navigasi Button/kesehatan.png" alt="kesehatan" sizes="50%" style="height: 30px;"> Kesehatan</button>
+            <button type="button" class="btn btn-outline-info" id="nav-button-kemanusiaan"> <img src="./images/Navigasi Button/kemanusiaan.png" alt="kemanusiaan" sizes="50%" style="height: 30px;"> Kemanusiaan</button>
+            <button type="button" class="btn btn-outline-warning" id="nav-button-bencanaalam"> <img src="./images/Navigasi Button/bencana alam.png" alt="bencana alam" sizes="50%" style="height: 30px;"> Bencana Alam</button>
+            <button type="button" class="btn btn-outline-success" id="nav-button-zakat"> <img src="./images/Navigasi Button/zakat.png" alt="zakat" sizes="50%" style="height: 30px;"> Zakat</button>
+            <button type="button" class="btn btn-outline-danger" id="nav-button-pendidikan"> <img src="./images/Navigasi Button/pendidikan.png" alt="pendidikan" sizes="50%" style="height: 30px;"> Pendidikan</button>
           </div>
         </div>
       </div>
@@ -130,7 +121,7 @@
                 <progress value="14" max="100" style="width: 40rem"></progress>
               </p>
               <p id="jumlah-terkumpul">
-                Rp. 14.000
+                Rp 14.000,-
               </p>
               <p id="jumlah-donatur">
                 3 donatur
@@ -165,7 +156,7 @@
                 <progress value="9" max="100" style="width: 40rem"></progress>
               </p>
               <p id="jumlah-terkumpul">
-                Rp. 360.000
+                Rp 360.000,-
               </p>
               <p id="jumlah-donatur">
                 9 donatur
@@ -200,7 +191,7 @@
                 <progress value="9" max="100" style="width: 40rem"></progress>
               </p>
               <p id="jumlah-terkumpul">
-                Rp. 352.100
+                Rp 352.100,-
               </p>
               <p id="jumlah-donatur">
                 14 donatur
@@ -235,7 +226,7 @@
                 <progress value="9" max="100" style="width: 40rem"></progress>
               </p>
               <p id="jumlah-terkumpul">
-                Rp. 352.100
+                Rp 352.100,-
               </p>
               <p id="jumlah-donatur">
                 14 donatur
@@ -270,7 +261,7 @@
                 <progress value="30" max="100" style="width: 40rem"></progress>
               </p>
               <p id="jumlah-terkumpul">
-                Rp. 666.159
+                Rp 666.159,-
               </p>
               <p id="jumlah-donatur">
                 30 donatur
@@ -305,7 +296,7 @@
                 <progress value="14" max="100" style="width: 40rem"></progress>
               </p>
               <p id="jumlah-terkumpul">
-                Rp. 533.947
+                Rp 533.947,-
               </p>
               <p id="jumlah-donatur">
                 14 donatur
@@ -318,5 +309,7 @@
         </table>
       </div>
       <br>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
